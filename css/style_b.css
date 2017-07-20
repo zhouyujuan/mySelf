@@ -1,0 +1,426 @@
+html,
+body {
+    height: 100%;
+}
+
+.headernav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    min-width: 670px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.headernav .navigation {
+    padding: 10px 20px;
+}
+
+.headernav .navigation .left {
+    float: left;
+}
+
+.headernav .navigation .left .logoimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.headernav .navigation .left .logo-info {
+    display: block;
+    padding-left: 60px;
+    margin-top: -70px;
+    text-decoration: none;
+    color: #000;
+}
+
+.headernav .navigation .left .logo-info .info {
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.headernav .navigation .left .logo-info .info.one {
+    border-bottom: 2px solid #008080;
+}
+
+.headernav .navigation .left .logo-info .info.two {
+    margin-top: -15px;
+}
+
+.headernav .navigation .right {
+    float: right;
+}
+
+.headernav .navigation .right .link {
+    float: left;
+    padding: 20px;
+}
+
+.headernav .navigation .right .link a {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.headernav .navigation .right .link a:hover {
+    -webkit-animation: hoveranimate 1s;
+    animation: hoveranimate 1s;
+}
+
+@-webkit-keyframes hoveranimate {
+    from {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes hoveranimate {
+    from {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+
+/*swiperbody部分*/
+
+.container-body {
+    height: 100%;
+}
+
+.container-body #main-body {
+    height: 100%;
+}
+
+.page1 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/section1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page1 .pagecont {
+    padding: 15% 20px;
+}
+
+.page1 .pagecont p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.page1 .pagecont .text1 {
+    font-size: 40px;
+}
+
+.page1 .pagecont .text2,
+.page1 .pagecont .text3,
+.page1 .pagecont .text4 {
+    font-size: 20px;
+}
+
+.page1 .fengzgif {
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    animation: fengzhang 3s;
+    -webkit-animation: fengzhang 3s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fengzhang {
+    from {
+        top: 65%;
+        left: 75%;
+    }
+    to {
+        top: 15%;
+        left: 5%;
+    }
+}
+
+@-webkit-keyframes fengzhang {
+    from {
+        top: 65%;
+        left: 75%;
+    }
+    to {
+        top: 15%;
+        left: 5%;
+    }
+}
+
+.page2 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/section4.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.page2 .pagecont {
+    padding: 50px 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page2 .pagecont .top_info {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 625px;
+    margin-left: -25%;
+
+}
+
+.page2 .pagecont .top_info .leftimg {
+    width: 200px;
+    height: 150px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: url(../img/logo.jpeg) center center no-repeat;
+    background-size: cover;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 45px;
+    left: 12%;
+    z-index: 5;
+}
+
+
+.page2 .pagecont .top_info .persional-info {
+    line-height: 9px;
+    position: absolute;
+    right: 12%;
+    top: 11px;
+}
+
+.page2 .pagecont .top_info .persional-info p {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.page5 .pagecont .company-info {
+    margin-top:100px;
+}
+
+.page5 .pagecont .company-info .title {
+    font-size: 20px;
+}
+
+.page5 .pagecont .company-info .comp-ul {}
+
+.page5 .pagecont .company-info .comp-ul li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 14px;
+    background: #DEB887;
+    border-radius: 10px;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.page5 .pagecont .company-info .comp-ul li p {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.page5 .pagecont .company-info .comp-ul li .dong {
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    background: #fff;
+    right: 15px;
+    top: 15px;
+    border-radius: 100%;
+}
+
+.page3 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/section2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page3 .pagecont {
+    padding: 100px 20px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page3 .swiper-container {
+    margin-top: 5%;
+    height: 100%;
+}
+
+.page3 .swiper-container .swiper-slide {
+    border: 2px solid #6495ED;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.page3 .swiper-container .swiper-slide ul {
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+.page4 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/section4.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page4 .pagecont {
+    padding: 100px 20px;
+}
+
+.page4 .pagecont #projectswiper .swiper-slide .project_img .showImg {
+    width: 150px;
+}
+
+.page5 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg81.png) 70% 20% no-repeat;
+    background-size: 530px 107px;
+}
+
+.page5 .pagecont {
+    padding: 100px 20px;
+}
+
+.page4 #projectswiper .swiper-wrapper .swiper-slide .project_img {}
+
+.page4 #projectswiper .inner {
+
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.page4 #projectswiper .inner .project_img .showImg {
+    width: 150px;
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+
+.page4 #projectswiper .inner.huaruiphone .project_img .showImg.one,
+.page4 #projectswiper .inner.jiamen .project_img .showImg.one,
+.page4 #projectswiper .inner.luneng .project_img .showImg.one,
+.page4 #projectswiper .inner.lansha .project_img .showImg.one {
+    position: absolute;
+    z-index: 2;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+}
+
+.page4 #projectswiper .inner.huaruiphone .project_img .showImg.two,
+.page4 #projectswiper .inner.jiamen .project_img .showImg.two,
+.page4 #projectswiper .inner.luneng .project_img .showImg.two,
+.page4 #projectswiper .inner.lansha .project_img .showImg.two {
+    position: absolute;
+    z-index: 2;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
+.page4 #projectswiper .inner.huaruiphone .project_img .showImg.three,
+.page4 #projectswiper .inner.jiamen .project_img .showImg.three,
+.page4 #projectswiper .inner.luneng .project_img .showImg.three,
+.page4 #projectswiper .inner.lansha .project_img .showImg.three {
+    position: absolute;
+    z-index: 2;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+.page4 #projectswiper .inner.huaruiphone .project_img .showImg.four,
+.page4 #projectswiper .inner.jiamen .project_img .showImg.four,
+.page4 #projectswiper .inner.luneng .project_img .showImg.four,
+.page4 #projectswiper .inner.lansha .project_img .showImg.four {
+    position: absolute;
+    z-index: 2;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.page4 #projectswiper .inner.huaruiphone .project_img .showImg.five,
+.page4 #projectswiper .inner.jiamen .project_img .showImg.five,
+.page4 #projectswiper .inner.luneng .project_img .showImg.five,
+.page4 #projectswiper .inner.lansha .project_img .showImg.five {
+    position: absolute;
+    z-index: 2;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+.page4 #projectswiper .inner.huaruipc .project_img{
+  position: relative;
+}
+.page4 #projectswiper .inner.huaruipc .project_img .showImg{
+  position: absolute;
+  width: 300px;
+}
+.page4 #projectswiper .inner.huaruipc .project_img .showImg.one{
+      left: -150px;
+    z-index: 3;
+}
+.page4 #projectswiper .inner.huaruipc .project_img .showImg.two{
+     top: 70px;
+    left: -100px;
+    z-index: 2;
+}
+.page4 #projectswiper .inner.huaruipc .project_img .showImg.three{
+        position: absolute;
+    top: 130px;
+}
+
+
+
+.page4 #projectswiper {
+    position: relative;
+    height: 100%;
+    width: 90%
+}
+
+
+
+.page4 #projectswiper .inner {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.page4 #projectswiper .inner .project_info {
+    padding-left: 310px;
+}
+
+
+}
